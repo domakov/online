@@ -2,6 +2,7 @@
 		<div class="top">
 			<div class="container">
 				<div class="row">
+					
 					<div class="col-xs-12 text-right">
 						<p class="site">www.yourdomainname.com</p>
 						<p class="num">Call: +01 123 456 7890</p>
