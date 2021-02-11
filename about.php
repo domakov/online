@@ -10,7 +10,7 @@
 	<meta name="author" content="freehtml5.co" />
 
 	<!-- 
-	//////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////привет от Миланы
 
 	FREE HTML5 TEMPLATE 
 	DESIGNED & DEVELOPED by FreeHTML5.co
