@@ -1,3 +1,6 @@
+	<?
+		require_once("lib/connection.php");
+	?>
 	<nav class="fh5co-nav" role="navigation">
 		<div class="top">
 			<div class="container">

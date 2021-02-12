@@ -33,10 +33,10 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
-
+<!--
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
-	
+	-->
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -75,6 +75,7 @@
 	<div id="page">
 	<?
 		include_once('includes/nav.php');
+		include_once('lib/functions.php');
 	?>
 	
 	<aside id="fh5co-hero">
@@ -100,6 +101,13 @@
 	<div id="fh5co-staff">
 		<div class="container">
 			<div class="row">
+				<?
+					$teachers=getTeachers();
+					//var_dump($teachers);
+					foreach ($teachers as $teacher) {
+						# code...
+				
+				?>
 				<div class="col-md-3 text-center">
 					<div class="staff">
 						<div class="staff-img" style="background-image: url(images/staff-1.jpg);">
@@ -111,115 +119,13 @@
 							</ul>
 						</div>
 						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
+						<h3><a href="#"><?echo $teacher['name_teacher']." ".$teacher['surname_teacher'] ?></a></h3>
 						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
 					</div>
 				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-2.jpg);">
-							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
-							</ul>
-						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-3.jpg);">
-							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
-							</ul>
-						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-1.jpg);">
-							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
-							</ul>
-						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-1.jpg);">
-							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
-							</ul>
-						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-3.jpg);">
-							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
-							</ul>
-						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-2.jpg);">
-							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
-							</ul>
-						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(images/staff-3.jpg);">
-							<ul class="fh5co-social">
-								<li><a href="#"><i class="icon-facebook2"></i></a></li>
-								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
-							</ul>
-						</div>
-						<span>Health Teacher</span>
-						<h3><a href="#">Mike Smith</a></h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
+				<?
+			}
+			?>
 			</div>
 		</div>
 	</div>
