@@ -42,7 +42,16 @@
 								</ul>
 							</li>
 							<li><a href="contact.php">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
+							<?
+							if(!isset($_SESSION['user']))
+							{
+								?>
+								<li class="btn-cta"><a href="login.php"><span>Login</span></a></li>
+							<?
+								}else{?>
+								<li class="btn-cta"><a href="logout.php"><span>Logout</span></a></li>	
+								<?}
+							?>
 							<li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>
 						</ul>
 					</div>
